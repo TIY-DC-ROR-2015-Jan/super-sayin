@@ -1,8 +1,5 @@
-class HelloWorker
-  include Sidekiq::Worker
-
-  def perform user_id
-    user = User.find user_id
+class HelloWorker < ActiveJob::Base
+  def perform user
     Sayer.new.say "Hello, #{user.email}"
   end
 end
