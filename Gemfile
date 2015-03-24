@@ -48,6 +48,7 @@ gem 'slim-rails'
 
 gem 'sidekiq'
 gem 'sinatra', require: nil
+gem 'sidetiq'
 
 group :development, :test do
   gem 'better_errors'
