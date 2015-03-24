@@ -47,6 +47,7 @@ gem 'activesupport'
 gem 'slim-rails'
 
 gem 'sidekiq'
+gem 'sinatra', require: nil
 
 group :development, :test do
   gem 'better_errors'
